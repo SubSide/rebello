@@ -1,0 +1,40 @@
+name: rebello
+description: "Can you hear me"
+publish_to: 'none'
+version: 1.0.0+1
+
+scripts:
+  build: flutter pub get && dart run build_runner build -d
+  generate: " "
+  clean: dart run build_runner clean && flutter clean
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  domain:
+    path: '../domain'
+  data:
+    path: '../data'
+  presentation:
+    path: '../presentation'
+  injectable:
+  get_it:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  injectable_generator:
+  build_runner:
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  generate: true
+  uses-material-design: true
+

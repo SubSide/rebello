@@ -1,0 +1,21 @@
+name: rebello
+description: "Hello?"
+publish_to: 'none'
+version: 1.0.0+1
+
+scripts:
+  build: cd domain && rps build && cd ../data && rps build && cd ../presentation && rps build && cd ../app && rps build
+  generate: cd domain && rps generate && cd ../data && rps generate && cd ../presentation && rps generate && cd ../app && rps generate
+  clean: cd domain && rps clean && cd ../data && rps clean && cd ../presentation && rps clean && cd ../app && rps clean
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0

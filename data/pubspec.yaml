@@ -1,0 +1,45 @@
+name: data
+version: 1.0.0+1
+publish_to: 'none'
+
+scripts:
+  build: flutter pub get && dart run build_runner build -d
+  generate: " "
+  clean: dart run build_runner clean && flutter clean
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+  flutter: '>=2.8.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  domain:
+    path: '../domain'
+  injectable:
+  get_it:
+  path_provider: ^2.0.15
+  stream_transform: ^2.1.0
+  mutex: ^3.0.1
+  shared_preferences: ^2.2.3
+  rxdart: ^0.27.7
+  socket_io_client: ^3.0.0
+  async: ^2.11.0
+  web_socket_channel: ^3.0.0
+  libsignal_protocol_dart: ^0.7.1
+  uuid: ^4.4.0
+  json_annotation: ^4.9.0
+  pointycastle: ^3.9.1
+  encrypt: ^5.0.3
+  flutter_background: ^1.2.0
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  injectable_generator:
+  build_runner: ^2.4.11
+  json_serializable: ^6.8.0
+
+flutter:

@@ -1,0 +1,1 @@
+export 'src/ui/app/rebello_app.dart' show RebelloApp;
